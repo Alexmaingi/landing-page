@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Montserrat;
+}
+.bg-image {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafa;
+}
+.bg-image img {
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+  position: relative;
+}
+.cover {
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+  position: absolute;
+}
+/* Navabar styling section*/
+nav {
+  width: 100vw;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  padding-top: 20px;
+}
+.nav-section1 {
+  display: flex;
+  align-items: center;
+}
+.nav-section1 h2 {
+  color: white;
+}
+.links {
+  margin-left: 6rem;
+}
+.links a {
+  text-decoration: none;
+  padding-left: 15px;
+  color: white;
+  font-weight: bold;
+}
+.nav-section2 {
+  display: flex;
+  align-items: center;
+}
+.nav-section2 h5 {
+  color: white;
+  font-weight: 600;
+}
+.nav-section2 button {
+  margin-left: 3rem;
+  padding: 10px;
+  background-color: #23a6f0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Home content styling section */
+.home-container {
+  top: 0;
+  width: 100vw;
+  position: absolute;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-container h1 {
+  color: white;
+  font-size: 4rem;
+}
+.home-container p {
+  color: white;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.btn1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #23a6f0;
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.btn2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: transparent;
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  margin-left: 5px;
+}
+
+/* Cards styling section */
+.card1 {
+  width: 20rem;
+  border: 1px solid black;
+  padding: 5px;
+}
