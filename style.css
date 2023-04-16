@@ -7,28 +7,31 @@ html {
   font-family: Montserrat;
 }
 .bg-image {
+  overflow: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 128vh;
   background-color: #fafafa;
 }
 .bg-image img {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   object-fit: cover;
   position: relative;
+  overflow-x: hidden;
 }
 .cover {
   top: 0;
   background-color: black;
   opacity: 0.5;
-  width: 100vw;
-  height: 85vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
+  overflow-y: hidden;
 }
 /* Navabar styling section*/
 nav {
-  width: 100vw;
+  width: 100%;
   top: 0;
   display: flex;
   align-items: center;
@@ -42,6 +45,9 @@ nav {
 }
 .nav-section1 h2 {
   color: white;
+}
+.nav-section1 ion-icon {
+  display: none;
 }
 .links {
   margin-left: 6rem;
@@ -62,18 +68,25 @@ nav {
 }
 .nav-section2 button {
   margin-left: 3rem;
-  padding: 10px;
+  padding: 15px;
   background-color: #23a6f0;
   border: none;
   border-radius: 5px;
   color: white;
   font-weight: bold;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+}
+.nav-section2 ion-icon {
+  padding-left: 5px;
+  font-size: 1.5rem;
 }
 
 /* Home content styling section */
 .home-container {
-  top: 0;
-  width: 100vw;
+  top: 13px;
+  width: 100%;
   position: absolute;
   margin-top: 15rem;
   display: flex;
@@ -103,6 +116,7 @@ nav {
   color: white;
   font-weight: bold;
   border: none;
+  font-size: 1.2rem;
 }
 .btn2 {
   padding-top: 10px;
@@ -115,11 +129,538 @@ nav {
   font-weight: bold;
   border: 1px solid white;
   margin-left: 5px;
+  font-size: 1.2rem;
 }
 
-/* Cards styling section */
+/* Cards1 styling section */
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  position: absolute;
+  width: 100%;
+  top: 86%;
+}
 .card1 {
   width: 20rem;
-  border: 1px solid black;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: white;
+  padding-right: 25px;
+  box-shadow: 0px 20px 20px -20px #ebebeb;
+}
+.card1 ion-icon {
+  font-size: 5rem;
+  color: #23a6f0;
+}
+.card1 h2 {
+  font-size: 2rem;
+}
+.card1 p {
+  font-size: 1rem;
   padding: 5px;
+  color: #737272;
+}
+.card2 {
+  width: 20rem;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #23a6f0;
+  padding-right: 25px;
+  box-shadow: 0px 20px 20px -20px #ebebeb;
+}
+.card2 ion-icon {
+  font-size: 5rem;
+  color: white;
+}
+.card2 h2 {
+  font-size: 2rem;
+  color: white;
+}
+.card2 p {
+  font-size: 1rem;
+  padding: 5px;
+  color: white;
+}
+
+/* Cards2 styling section */
+
+.cards2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  top: 86%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.card {
+  width: 20rem;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: white;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card ion-icon {
+  font-size: 5rem;
+  color: #23a6f0;
+}
+.card h2 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.card p {
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+  color: #737272;
+}
+
+/* Reaview styling section */
+
+.container {
+  width: 100%;
+  height: 335vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.header h1 {
+  font-size: 3rem;
+}
+.header p {
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  font-size: larger;
+  color: #737272;
+}
+.review-card {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+.review-card1 {
+  border: 1px solid #737272;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.review-card1 img {
+  max-width: 15rem;
+  max-height: 13rem;
+  margin-top: 20px;
+}
+.review-card1 p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: larger;
+  font-weight: 500;
+  color: #737272;
+}
+.stars {
+  margin-top: 25px;
+}
+.stars ion-icon {
+  font-size: 20px;
+  color: #f3cd03;
+}
+
+/* Vectors styling section */
+
+.vectors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22rem;
+}
+.vectors img {
+  max-width: 7rem;
+  margin-right: 4.5rem;
+  margin-left: 4.5rem;
+}
+
+/* newslatter styling section */
+
+.newslatter {
+  margin-top: 50px;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 3px;
+  width: 78%;
+  background-image: linear-gradient(to right, #154288, #ce1789);
+}
+.news-subscribe h1 {
+  color: white;
+}
+.email-input {
+  display: flex;
+  align-items: center;
+}
+.email-input input {
+  width: 25rem;
+  height: 4.58rem;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.email-input button {
+  padding: 21px;
+  border: 0.1px solid white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #23a6f0;
+  color: white;
+  font-size: small;
+  font-weight: 400;
+}
+
+/* Pricing styling section */
+
+.pricing {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.pricing-card1 {
+  border: 1px solid #23a6f0;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+}
+.pricing-card1 h2 {
+  padding-bottom: 25px;
+  font-size: 2rem;
+}
+.pricing-card1 h3 {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #737272;
+}
+.pricing-cash {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.pricing-cash h1 {
+  font-size: 3rem;
+  color: #23a6f0;
+}
+.pricing-cash span {
+  font-size: 1rem;
+  padding: 20px;
+  font-weight: 600;
+  color: #23a6f0;
+}
+pricing-details {
+  text-align: start;
+}
+.pricing-details p {
+  padding-bottom: 0px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  margin-right: 7px;
+  align-items: center;
+  color: #252b42;
+}
+.pricing-card1 button {
+  padding: 15px;
+  width: 18rem;
+  font-weight: 800;
+  background-color: #23a6f0;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+.check1 {
+  padding: 5px;
+  font-size: 2rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+  background-color: #2dc071;
+  color: white;
+}
+.check2 {
+  padding: 5px;
+  font-size: 2rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+  background-color: #bdbdbd;
+  color: white;
+}
+.pricing-card2 {
+  border: 1px solid #23a6f0;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #252b42;
+}
+.pricing-card2 h2 {
+  padding-bottom: 35px;
+  font-size: 2rem;
+  color: white;
+}
+.pricing-card2 h3 {
+  text-align: center;
+  padding-bottom: 35px;
+  color: white;
+}
+.pricing2-cash {
+  display: flex;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.pricing2-cash h1 {
+  font-size: 3rem;
+  color: #23a6f0;
+}
+.pricing2-cash span {
+  font-size: 1rem;
+  padding: 20px;
+  font-weight: 600;
+  color: #23a6f0;
+}
+pricing2-details {
+  text-align: start;
+}
+.pricing2-details p {
+  padding-bottom: 0px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  margin-right: 7px;
+  align-items: center;
+  color: white;
+}
+.pricing-card2 button {
+  padding: 15px;
+  width: 18rem;
+  font-weight: 800;
+  background-color: #23a6f0;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  margin-top: 25px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/* Location styling section */
+
+.location-container {
+  width: 100%;
+  height: 120vh;
+  background-color: #252b42;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+.location-section1 {
+  color: white;
+  margin-right: 10rem;
+}
+.location-section1 h1 {
+  font-size: 3.5rem;
+}
+.location-section1 p {
+  font-size: 1.5rem;
+}
+.location img {
+  max-width: 35rem;
+}
+
+/* Appointment booking styling section  */
+
+.book-appointment {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fafafa;
+}
+.book-container {
+  display: flex;
+  margin-top: -35rem;
+}
+.book-container img {
+  max-width: 20rem;
+}
+.book-inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+}
+.booking-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.book-inputs label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.book-inputs input {
+  height: 3rem;
+  width: 40rem;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  background-color: #fafafa;
+}
+.book-inputs button {
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #23a6f0;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.contact-us {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+.contact-us button {
+  padding: 20px;
+  width: 12rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #23a6f0;
+  border: none;
+  border-radius: 5px;
+}
+.contact-us p {
+  padding-top: 10px;
+  color: #737272;
+}
+
+/* Footer styling section */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px;
+}
+.footer-section1 {
+  margin: 50px;
+}
+.footer-section1 p {
+  padding-top: 15px;
+  font-size: 1.2rem;
+  color: #737272;
+}
+.footer-section2 {
+  margin: 50px;
+}
+.footer-section2 p {
+  padding-top: 15px;
+  font-size: 1.2rem;
+  color: #737272;
+  display: flex;
+  align-items: center;
+}
+.footer-section2 ion-icon {
+  color: #23a6f0;
+  font-size: 2rem;
+}
+.small-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-icon {
+  display: flex;
+}
+.footer-icon ion-icon {
+  padding-right: 10px;
+  font-size: 2rem;
+  color: #23a6f0;
+}
+.small-footer-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.small-footer-content h3 {
+  color: #737272;
 }
