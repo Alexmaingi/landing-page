@@ -1004,9 +1004,9 @@
     margin-top: 5rem;
   }
   .vectors img {
-    max-width: 2rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    max-width: 0.5rem;
+    margin-right: 2px;
+    margin-left: 2px;
   }
 
   /* newslatter styling section */
@@ -1385,6 +1385,704 @@
   .footer-icon ion-icon {
     padding-right: 5px;
     font-size: 2rem;
+    color: #23a6f0;
+  }
+  .small-footer-content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .small-footer-content h3 {
+    color: #737272;
+    font-size: small;
+  }
+}
+@media (max-width: 1140px) {
+  .bg-image {
+    width: 100vw;
+    height: 120vh;
+    background-color: #fafafa;
+    overflow: hidden;
+  }
+  .bg-image img {
+    width: 100%;
+    height: 84%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover {
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 101vh;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  /* navbar responsive styling section */
+
+  nav {
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding-top: 10px;
+  }
+  .nav-section1 {
+    display: flex;
+    align-items: center;
+  }
+  .nav-section1 h2 {
+    color: white;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-section1 ion-icon {
+    display: flex;
+    margin-top: 5px;
+    font-size: larger;
+    margin-left: 4px;
+  }
+  .links {
+    margin-left: 3rem;
+  }
+  .links a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+    display: none;
+  }
+  .nav-section2 {
+    display: flex;
+    align-items: center;
+  }
+  .nav-section2 h5 {
+    color: white;
+    font-weight: 400;
+  }
+  .nav-section2 button {
+    margin-left: 1rem;
+    margin-right: 10px;
+    padding: 8px;
+    background-color: #23a6f0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  .nav-section2 ion-icon {
+    padding-left: 5px;
+    font-size: 1.5rem;
+  }
+
+  /* Home responsive styling section */
+
+  .home-container {
+    top: 13px;
+    width: 100%;
+    position: absolute;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  .home-container p {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .btn1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #23a6f0;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+  }
+  .btn2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: transparent;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+
+  /* Cards1 styling section */
+  .cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: absolute;
+    width: 100%;
+    top: 89%;
+  }
+  .card1 {
+    width: 20rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+    padding-right: 25px;
+    box-shadow: 0px 20px 20px -20px #ebebeb;
+    margin-left: 10px;
+  }
+  .card1 ion-icon {
+    font-size: 5rem;
+    color: #23a6f0;
+  }
+  .card1 h2 {
+    font-size: 1rem;
+  }
+  .card1 p {
+    font-size: 2px;
+    padding: 3px;
+    color: #737272;
+  }
+  .card2 {
+    width: 20rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #23a6f0;
+    padding-right: 25px;
+    box-shadow: 0px 20px 20px -20px #ebebeb;
+    margin-right: 10px;
+  }
+  .card2 ion-icon {
+    font-size: 4rem;
+    color: white;
+  }
+  .card2 h2 {
+    font-size: 0.6rem;
+    color: white;
+  }
+  .card2 p {
+    font-size: 1.5px;
+    padding: 2px;
+    color: white;
+  }
+
+  /* Cards2 styling section */
+
+  .cards2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    top: 66%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  .card {
+    width: 20rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card ion-icon {
+    font-size: 4rem;
+    color: #23a6f0;
+  }
+  .card h2 {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .card p {
+    font-size: 0.5rem;
+    padding: 5px;
+    text-align: center;
+    color: #737272;
+  }
+
+  /* Reaview responsive styling section */
+
+  .container {
+    width: 100vw;
+    height: 560vh;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header p {
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: small;
+    color: #737272;
+  }
+  .review-card {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .review-card1 {
+    border: 1px solid #737272;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .review-card1 img {
+    max-width: 10rem;
+    max-height: 8rem;
+    margin-top: 15px;
+  }
+  .review-card1 p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: 400;
+    color: #737272;
+  }
+  .stars {
+    margin-top: 15px;
+  }
+  .stars ion-icon {
+    font-size: 15px;
+    color: #f3cd03;
+  }
+
+  /* Vectors styling section */
+
+  .vectors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+  .vectors img {
+    max-width: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  /* newslatter styling section */
+
+  .newslatter {
+    margin-top: 50px;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 3px;
+    width: 78%;
+    background-image: linear-gradient(to right, #154288, #ce1789);
+  }
+  .news-subscribe h1 {
+    color: white;
+    font-size: 1rem;
+  }
+  .email-input {
+    display: flex;
+    align-items: center;
+  }
+  .email-input input {
+    width: 15rem;
+    height: 2.58rem;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  .email-input button {
+    padding: 8px;
+    border: 0.1px solid white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #23a6f0;
+    color: white;
+    font-size: small;
+    font-weight: 400;
+  }
+
+  /* Pricing styling section */
+
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+
+  .pricing-card1 {
+    border: 1px solid #23a6f0;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .pricing-card1 h2 {
+    padding-bottom: 25px;
+    font-size: 2rem;
+  }
+  .pricing-card1 h3 {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #737272;
+  }
+  .pricing-cash {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  .pricing-cash h1 {
+    font-size: 3rem;
+    color: #23a6f0;
+  }
+  .pricing-cash span {
+    font-size: 1rem;
+    padding: 20px;
+    font-weight: 600;
+    color: #23a6f0;
+  }
+  pricing-details {
+    text-align: start;
+  }
+  .pricing-details p {
+    padding-bottom: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    margin-right: 7px;
+    align-items: center;
+    color: #252b42;
+  }
+  .pricing-card1 button {
+    padding: 15px;
+    width: 18rem;
+    font-weight: 800;
+    background-color: #23a6f0;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  .check1 {
+    padding: 5px;
+    font-size: 2rem;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    background-color: #2dc071;
+    color: white;
+  }
+  .check2 {
+    padding: 5px;
+    font-size: 2rem;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    background-color: #bdbdbd;
+    color: white;
+  }
+  .pricing-card2 {
+    border: 1px solid #23a6f0;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #252b42;
+    margin-bottom: 10px;
+  }
+  .pricing-card2 h2 {
+    padding-bottom: 35px;
+    font-size: 2rem;
+    color: white;
+  }
+  .pricing-card2 h3 {
+    text-align: center;
+    padding-bottom: 35px;
+    color: white;
+  }
+  .pricing2-cash {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+  .pricing2-cash h1 {
+    font-size: 3rem;
+    color: #23a6f0;
+  }
+  .pricing2-cash span {
+    font-size: 1rem;
+    padding: 20px;
+    font-weight: 600;
+    color: #23a6f0;
+  }
+  pricing2-details {
+    text-align: start;
+  }
+  .pricing2-details p {
+    padding-bottom: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    margin-right: 7px;
+    align-items: center;
+    color: white;
+  }
+  .pricing-card2 button {
+    padding: 15px;
+    width: 18rem;
+    font-weight: 800;
+    background-color: #23a6f0;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-top: 25px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  /* Location styling section */
+
+  .location-container {
+    width: 100%;
+    height: 90vh;
+    background-color: #252b42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .location-section1 {
+    color: white;
+  }
+  .location-section1 h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 8rem;
+  }
+  .location-section1 p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 8rem;
+  }
+  .location img {
+    max-width: 30rem;
+    margin-right: 6rem;
+  }
+
+  /* Appointment booking styling section  */
+
+  .book-appointment {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fafafa;
+  }
+  .book-container {
+    display: flex;
+    margin-top: 15rem;
+  }
+  .book-container img {
+    max-width: 20rem;
+    display: none;
+  }
+  .book-inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+  }
+  .booking-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .book-inputs label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .book-inputs input {
+    height: 1.5rem;
+    width: 25rem;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    background-color: #fafafa;
+  }
+  .book-inputs button {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #23a6f0;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .contact-us {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .contact-us h1 {
+    font-size: 1rem;
+  }
+  .contact-us button {
+    padding: 20px;
+    width: 12rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #23a6f0;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  .contact-us p {
+    padding-top: 10px;
+    color: #737272;
+  }
+
+  /* Footer styling section */
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .footer-section1 {
+    margin: 10px;
+    text-align: center;
+  }
+  .footer-section1 p {
+    padding-top: 15px;
+    font-size: small;
+    color: #737272;
+  }
+  .footer-section2 {
+    margin: 10px;
+  }
+  .footer-section2 p {
+    padding-top: 5px;
+    font-size: small;
+    color: #737272;
+    display: flex;
+    align-items: center;
+  }
+  .footer-section2 ion-icon {
+    color: #23a6f0;
+    font-size: 1rem;
+  }
+  .small-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-icon {
+    display: flex;
+  }
+  .footer-icon ion-icon {
+    padding-right: 5px;
+    font-size: 1rem;
     color: #23a6f0;
   }
   .small-footer-content {
