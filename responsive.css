@@ -929,8 +929,8 @@
   /* Reaview responsive styling section */
 
   .container {
-    width: 100vw;
-    height: 750vh;
+    width: 100%;
+    height: 550vh;
     background-color: #fafafa;
     display: flex;
     flex-direction: column;
@@ -1004,9 +1004,9 @@
     margin-top: 5rem;
   }
   .vectors img {
-    max-width: 0.5rem;
-    margin-right: 2px;
-    margin-left: 2px;
+    max-width: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   /* newslatter styling section */
