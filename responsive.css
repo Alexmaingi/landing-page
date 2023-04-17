@@ -930,7 +930,7 @@
 
   .container {
     width: 100vw;
-    height: 550vh;
+    height: 450vh;
     background-color: #fafafa;
     display: flex;
     flex-direction: column;
