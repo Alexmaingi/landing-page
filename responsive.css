@@ -930,7 +930,7 @@
 
   .container {
     width: 100vw;
-    height: 400vh;
+    height: 700vh;
     background-color: #fafafa;
     display: flex;
     flex-direction: column;
@@ -1241,6 +1241,7 @@
   .location img {
     max-width: 20rem;
     margin-right: 6rem;
+    display: none;
   }
 
   /* Appointment booking styling section  */
