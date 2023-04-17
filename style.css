@@ -140,7 +140,7 @@ nav {
   gap: 25px;
   position: absolute;
   width: 100%;
-  top: 86%;
+  top: 90%;
 }
 .card1 {
   width: 20rem;
@@ -538,7 +538,8 @@ pricing2-details {
 }
 .book-container {
   display: flex;
-  margin-top: -5rem;
+  margin-top: -2rem;
+  margin-bottom: 10rem;
 }
 .book-container img {
   max-width: 20rem;
@@ -585,8 +586,7 @@ pricing2-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 .contact-us button {
   padding: 20px;
